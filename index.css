@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    font-family:'Great Vibes', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid #bcbcbc;
+    overflow: hidden;
+}
+
+.active{
+    background-image: url(images/images.png);
+    background-size: contain;
+}
+
+.score {
+    position: absolute;
+    right: 5px;
+    font-family: 'Great Vibes',sans-serif ;
+}
+
+.block {
+    background-image: url(images/block.png);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 260px;
+    background-position: center;
+    background-size: cover;
+    right: 0px;
+    animation: block .9s linear infinite;
+}
+
+.jump {
+    animation: jump .5s linear infinite;
+}
+
+@keyframes block {
+    from {
+        left: 460px;
+    }
+
+    to {
+        left: -20px;
+    }
+}
+
+.characters {
+    background-image: url(images/62-629335_transparent-dinosaur-velociraptor-black-and-white-hd-png-removebg-preview.png);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-size:contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 250px;
+    /* background-color: #fff; */
+    
+}
+
+@keyframes jump {
+    0% {
+        top: 300px;
+    }
+
+    30% {
+        top: 200px;
+    }
+
+    70% {
+        top: 200px;
+    }
+
+    100% {
+        top: 200px;
+    }
+}
